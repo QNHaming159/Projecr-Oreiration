@@ -1,0 +1,82 @@
+{
+  "name": "Projecr Oreiration",
+  "tree": {
+    "$className": "DataModel",
+
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Maps": {
+        "$className": "Folder",
+        "Test_v1": {
+          "$className": "Folder",
+          "Core": {
+            "$className": "Folder",
+            "AStar_v1": {
+              "$className": "Script"
+            },
+            "GetBoardData": {
+              "$className": "ModuleScript"
+            },
+            "$path": "src/v1"
+          }
+        },
+        "Test_v2": {
+          "$className": "Folder",
+          "Core": {
+            "$className": "Folder",
+            "AStar_v2": {
+              "$className": "Script"
+            },
+            "GetBoardData": {
+              "$className": "ModuleScript"
+            },
+            "$path": "src/v2"
+          }
+        }
+      },
+
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Color": [
+            0.38823,
+            0.37254,
+            0.38823
+          ],
+          "Locked": true,
+          "Position": [
+            0,
+            -10,
+            0
+          ],
+          "Size": [
+            512,
+            20,
+            512
+          ]
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [
+          0,
+          0,
+          0
+        ],
+        "Brightness": 2,
+        "GlobalShadows": true,
+        "Outlines": false,
+        "Technology": "Voxel"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
