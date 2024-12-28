@@ -78,7 +78,7 @@ while #Open_list>0 do
 		local New_cord = {Current_cord[1]+Offset_cord[1],Current_cord[2]+Offset_cord[2]}
 		if CheckSurround_isValid(New_cord,true) then continue end -- If new cord is unvalid
 		if table.find(Open_list,New_cord) then continue end -- Check if this new cord is in open list
-		table.insert(New_nodes,Board_data.Cells[New_cord[1]][New_cord[2]]) -- Add new node to the list
+		table.insert(New_nodes,CordtoNode(New_cord)) -- Add new node to the list
 	end
 	-- Get A star scores for new nodes
 	for _,Node in pairs(New_nodes) do
